@@ -1,0 +1,174 @@
+:root {
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+    --ligth-blue-100: #F3F5FC;
+    --ligth-blue-200: #EFF1FA;
+    --ligth-blue-300: #E9ECF8;
+    --ligth-blue-400: #AAB2D5;
+    --ligth-blue-500: #757FB2;
+    --gray-100: #CED4DA;
+    --gray-200: #ADB5BD;
+    --gray-300: #868E96;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+}
+
+body{
+    background: var(--ligth-blue-200);
+    padding: 0rem;
+    margin: 0rem;
+}
+.cuerpo{
+    display: flex;
+    width: 90%;
+    height: calc(95vh - 75px);
+    margin: 0 auto;
+    padding-top: 3.5rem;
+}
+#divIngresarTexto{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    width: 65%;
+}
+.logoAlura{
+    width: 41px;
+}
+#divMostrarTexto{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    background-color: white;
+    border-radius: 5%;
+    -webkit-box-shadow: 0px 0px 15px -2px rgba(5,32,81,1);
+    -moz-box-shadow: 0px 0px 15px -2px rgba(5,32,81,1);
+    box-shadow: 0px 0px 15px -2px rgba(5,32,81,1);
+    padding: 1.5rem 0rem;
+    
+}
+.divAreaMensaje{
+    width: 80%;
+    height: 55vh;
+    margin: 0 auto;
+}
+.AreaMensaje{
+    width: 100%;
+    height: 100%;
+    background-color: #EFF1FA;
+    border: none;
+    resize: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #356EA9;
+    /* text-align: justify;     */
+}
+.AreaMensaje:focus{
+    outline: 0 none;
+}
+.AreaMensaje::placeholder{
+    color: #356EA9;
+    font-size: 1.5rem;
+}
+#AreaMensajeColorRojo::placeholder{
+    color: #ff3527;
+    font-size: 1.5rem;
+}
+.divMensajeLetras{
+    padding: 1rem 0rem;
+    width: 80%;
+    margin: 0 auto;
+}
+.colorRojo{
+    color: red;
+}
+.divBotones{
+    display: flex;
+    /* position: absolute; */
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    bottom: 1.5rem;
+    left: 10%;
+}
+.divLabelTexto{
+    padding-top: 5rem;
+}
+.btn{
+    border-radius: 25px;
+    width: 46%;
+    padding: 1rem 0rem;
+    /* border: 1px solid black; */
+    border: none;
+}
+#btnEncriptar{
+    background-color: #072B61;
+    color: white;
+    border-color: #0A3871;
+    font-weight: bold;
+}
+#btnDesencriptar{
+    border: 1px solid #0A3871;
+    background-color: transparent;
+    color: #0A3871;
+    font-weight: bold;
+}
+.divLabelTexto{
+    display: flex;
+    flex-direction: column;
+}
+.labelTexto{
+    text-align: center;
+}
+.labelTexto:nth-child(2){
+    font-size: 1.7rem;
+    color: var(--gray-500);
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.labelTexto:nth-child(3){
+    font-size: 1rem;
+    color: var(--gray-200);
+    font-weight: bold;
+}
+.btnBlanco{
+    /* position: absolute; */
+    display: none;
+    width: 80%;
+}
+#btnCopiar{
+    width: 100%;
+    border: 1px solid #0A3871;
+    background-color: transparent;
+    color: #0A3871;
+    font-weight: bold;
+}
+.divAreaEncriptado{
+    display: none;
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+}
+.AreaEncriptado{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    resize: none;
+    /* border: 1px solid red; */
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ADB5BD;
+    /* border: 1px solid black; */
+}
+.AreaEncriptado:focus{
+    outline: 0 none;
+}

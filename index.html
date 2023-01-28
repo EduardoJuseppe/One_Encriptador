@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge ONE - Lógica de Programación - Encriptador de Texto</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive_main.css">
+</head>
+
+<body>
+    <!-- Seccion de Main -->
+    <main class="cuerpo">
+        <div id="divIngresarTexto">
+            <img class="logoAlura" src="img/LogoA.png">
+            <div class="divAreaMensaje">
+                <textarea class="AreaMensaje" name="mensaje" spellcheck="false"
+                placeholder="Ingrese el texto aqui_" data-textarea></textarea>
+            </div>
+            <div class="divMensajeLetras">
+                <i class="fa-solid fa-circle-exclamation" id="iconoSigno"></i>
+                <span id="spanMensaje">Solo letras minúsculas y sin acentos</span>
+            </div>
+            <div class="divBotones">
+                <button class="btn" id="btnEncriptar" type="button">Encriptar</button>
+                <button class="btn" id="btnDesencriptar" type="button">Desencriptar</button>
+            </div>      
+        </div>
+        <div id="divMostrarTexto">
+            <div class="divAreaEncriptado">
+                <textarea class="AreaEncriptado" name="mensajeEncriptado" spellcheck="false" readonly></textarea>
+            </div>
+            <div class="divLabelTexto">
+                <img class="imgMundo" src="img/nave.png">
+                <label class="labelTexto">Ningún mensaje fue <br>encontrado</label>
+                <label class="labelTexto">Ingresa el texto que desees encriptar o <br>desencriptar.</label>
+            </div>
+            <div class="btnBlanco">
+                <button class="btn" id="btnCopiar" type="button">Copiar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/acf9a5f092.js" crossorigin="anonymous"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
